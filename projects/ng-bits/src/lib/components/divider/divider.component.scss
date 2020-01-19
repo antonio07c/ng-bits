@@ -1,0 +1,66 @@
+@import "../../variables.scss";
+
+.divider{
+    display: table;
+    margin: 10px 0;
+    color: $title-color;  
+    white-space: nowrap;  
+    clear: both;
+    width: 100%;
+    min-width: 100%;
+    height: 1px;    
+    font-size: 16px;
+}
+  
+.text-left::after{
+    position: relative;    
+    display: table-cell;
+    width: 100%;    
+    border-top: 1px solid $border-color;    
+    content: '';    
+    top: 10px;   
+}
+
+.text-left span{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.divider span:empty { padding:0; }
+
+.text-right span{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.text-right::before{
+  position: relative;    
+  display: table-cell;
+  width: 100%;    
+  border-top: 1px solid $border-color;    
+  content: '';    
+  top: 10px;   
+}
+
+.text-center::before{
+  position: relative;    
+  display: table-cell;
+  width: 50%;    
+  border-top: 1px solid $border-color;    
+  content: '';    
+  top: 10px;   
+}
+
+.text-center::after{
+  position: relative;    
+  display: table-cell;
+  width: 50%;    
+  border-top: 1px solid $border-color;    
+  content: '';    
+  top: 10px;   
+}
+
+.text-center span{
+  display: inline-block;
+  padding: 0 10px;
+}

@@ -1,0 +1,94 @@
+.confirm-footer{ 
+    font-weight:bold;
+    text-align: right;
+    width: 100%;
+    padding:0;
+    margin-top:20px;
+  }
+ 
+  .confirm-buttons{
+    text-align:right;
+    width:100%;
+  }
+  
+  .container{
+    background: white;  
+    display: block;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    outline: 0;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    min-height: inherit;
+    max-height: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    color: rgba(0,0,0,.87);
+  }
+  
+  .confirm-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .confirm-text{
+    font-size: 15px;
+  }
+
+ ::ng-deep .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    opacity: 1;
+}
+  
+::ng-deep .cdk-overlay-dark-backdrop{  
+    background: rgba(0, 0, 0, 0.4);
+}
+
+::ng-deep .cdk-overlay-backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity .3s cubic-bezier(.25,.8,.25,1);
+    opacity: 0;
+}
+
+::ng-deep .cdk-overlay-container{
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+::ng-deep .cdk-global-overlay-wrapper {
+    display: flex;
+    position: absolute;
+    z-index: 1000;    
+}
+
+::ng-deep .cdk-overlay-pane {
+    position: absolute;
+    pointer-events: auto;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+::ng-deep .cdk-global-overlay-wrapper, .cdk-overlay-container {
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}

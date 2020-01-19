@@ -1,0 +1,18 @@
+<div class="api-table">
+  <div class="api-header">
+      <div class="api-column api-column-first">
+          Name
+        </div>
+        <div class="api-column">
+          Description
+        </div>
+  </div>
+  <div *ngFor="let row of this.api" class="api-row">
+      <div class="api-column api-column-first">
+        {{row.name}}
+      </div>
+      <div class="api-column">
+        {{row.description}}
+      </div>
+  </div>            
+</div>

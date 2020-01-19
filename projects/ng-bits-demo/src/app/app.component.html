@@ -1,0 +1,31 @@
+<div class="app-component">
+    <div class="app-nav mat-elevation-z6">  
+      <div class="nav-header">
+        <span>NG-BITS</span>  
+        <div class="nav-menu">
+          <!-- <ul>
+            <li>Components</li>
+            <li>About</li>
+            <li>GitHub</li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <div class="app-content">      
+      <div class="full-page">      
+        <div class="menu">
+          <ul class="list">
+            <li><a routerLink="/button" routerLinkActive="active">Button</a></li>
+            <li><a routerLink="/card" routerLinkActive="active">Card</a></li>            
+            <li><a href="/confirmation-dialog">Confirmation Dialog</a></li>
+            <li><a routerLink="/divider" routerLinkActive="active">Divider</a></li>            
+            <li><a routerLink="/note" routerLinkActive="active">Note</a></li>
+            <li><a routerLink="/tag" routerLinkActive="active">Tag</a></li>
+          </ul>
+        </div>
+        <div class="page">          
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>

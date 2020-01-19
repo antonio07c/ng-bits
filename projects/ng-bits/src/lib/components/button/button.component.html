@@ -1,0 +1,3 @@
+<button [disabled] = "disabled" [ngClass] = "{'button-normal': bitType=='default' || bitType=='danger' || bitType=='warning' || bitType=='success', 'button-border': bitType=='stroked', 'button-danger': bitType=='danger', 'button-warning': bitType=='warning', 'button-success': bitType=='success', 'button-link': bitType=='link', 'button-disabled': disabled}">
+  <span class="button-content"><ng-content></ng-content></span>  
+</button>

@@ -1,0 +1,84 @@
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+//@import "~prismjs/themes/prism-coy";
+@import "~prismjs/themes/prism-okaidia";
+
+Body {
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    overflow-x: hidden;
+    margin:0;
+    background-color: #fafafa;
+    color: rgb(15,15,15);
+  }
+
+  pre{
+      margin: 24px 0!important;
+  }
+
+// pre{
+//     display:grid;
+// }
+
+// pre:after, pre:before{
+//     display:none!important;
+// }
+
+// pre code{
+//     margin: 10px 0;
+//     padding-left: 20px !important;
+//     border-left: 1px solid #e8e8e8!important;
+//     border: 1px solid #e8e8e8;
+//     border-radius: 4px;
+//     box-shadow: none !important;
+// }
+
+
+:root{
+    --header-color: #0073b1;
+    /* --header-gradient: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(63,63,205,1) 0%, rgba(0,194,255,1) 100%); */
+    --header-gradient: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(63,63,205,1) 0%, rgba(0,163,210,1) 100%);
+    --primary-color: #1a73e8;
+    --secondary-color: #99c3ff;
+}
+
+.h1 {    
+    font-size: 18px;    
+}
+
+a{    
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;    
+    color: rgb(15,15,15);
+}
+
+a:hover{
+    color:#1a73e8;
+}
+
+a:visited{
+    color: rgb(15,15,15);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {    
+    background-color: transparent;
+}
+
+bit-divider .divider{
+    margin: 20px 0 10px 0 !important;    
+    font-size: 22px;
+}
+
+bit-note .note-container{
+    margin: 10px 0!important;
+}

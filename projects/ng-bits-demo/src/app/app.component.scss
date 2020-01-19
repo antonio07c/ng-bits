@@ -1,0 +1,149 @@
+.app-nav{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;    
+}
+
+.nav-header{
+  display: flex;
+  font-weight: 400;
+  font-size: 17px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 20px;  
+  background: var(--header-color);
+  background: var(--header-gradient);
+  color: white;
+  height:40px;  
+  box-shadow: 0 3px 5px -1px rgba(63, 63, 205, .2), 0 6px 10px 0 rgba(63,63,205,.14), 0 1px 18px 0 rgba(63,63,205,0.12);
+}
+
+.app-header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;  
+  color: rgb(15, 15, 15);  
+  font-size: 15px;
+  z-index:1;
+  position:relative;    
+  display: block;    
+}
+
+.app-header h1{
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+    
+  .app-component{    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+  }
+
+  .app-content{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .menu{
+    display: block;
+    box-sizing: border-box;
+    width: 19%;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;  
+    float: left;  
+    margin-top:25px;
+  }
+
+  .list{
+    list-style-type: none;
+    margin: 0 0 5px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;    
+    border-right: 1px solid #e8e8e8;
+  }
+
+  .list li{
+    font-size: 14px;    
+    margin: 0;
+    padding: 5px 15px 5px 25px;
+    line-height: 32px;        
+  }
+
+  .list li .active{
+    font-weight: bold;
+  }
+
+  .nav-menu{
+    display: inline-flex;
+  }
+
+  .nav-menu ul{
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .nav-menu li{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 15px; 
+  }
+
+  .page{
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 5px 35px;        
+    overflow: hidden;
+    position: relative;
+    padding: 5px 35px 35px 35px;
+  }
+
+  .full-page{
+      position: relative;
+  }
+
+  .section-divider{
+    font-size: 16px;
+  }
+
+  .card-footer button{
+    margin: 5px;
+  }
+
+ 
+
+  @media (max-width: 868px) {
+    .menu{
+      float: unset;
+      width: unset;
+      margin: 20px 35px 0 35px;
+    }
+
+    .page{
+      width: 100%;
+    }
+
+    .list{
+      border-right: none;
+    }
+
+    .list li{
+      display: inline-flex;
+      border: 1px solid #e8e8e8;
+      padding: 0 10px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+  }

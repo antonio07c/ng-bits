@@ -1,0 +1,33 @@
+<div class="app-header">
+  <h1>Tag</h1>
+</div>
+<bit-divider>Basic Tag</bit-divider>
+<div class="tag-container">
+  <bit-tag>simple</bit-tag>
+  <bit-tag bitCloseable="true">closeable</bit-tag>  
+</div>  
+<pre class="bit-pre">
+  <code class=" language-markup">
+    &#x3C;bit-tag&#x3E;simple&#x3C;/bit-tag&#x3E;
+    &#x3C;bit-tag bitCloseable=&#x22;true&#x22;&#x3E;closeable&#x3C;/bit-tag&#x3E;
+  </code>
+  </pre>
+<bit-divider>Colored Tag</bit-divider>
+<div class="tag-container">
+  <bit-tag bitColor="red">red</bit-tag>
+  <bit-tag bitColor="#F6298C">#F6298C</bit-tag>
+  <bit-tag bitColor="RGB(127,40,89)">RGB(127,40,89)</bit-tag>
+  <bit-tag bitColor="#1dc5b3">#1dc5b3</bit-tag>     
+  <bit-tag bitColor="#0d36ff">#0d36ff</bit-tag>   
+</div>
+<pre class="bit-pre">
+  <code class=" language-markup">
+    &#x3C;bit-tag bitColor=&#x22;red&#x22;&#x3E;red&#x3C;/bit-tag&#x3E;
+    &#x3C;bit-tag bitColor=&#x22;#F6298C&#x22;&#x3E;#F6298C&#x3C;/bit-tag&#x3E;
+    &#x3C;bit-tag bitColor=&#x22;RGB(127,40,89)&#x22;&#x3E;RGB(127,40,89)&#x3C;/bit-tag&#x3E;
+    &#x3C;bit-tag bitColor=&#x22;#1dc5b3&#x22;&#x3E;#1dc5b3&#x3C;/bit-tag&#x3E;     
+    &#x3C;bit-tag bitColor=&#x22;#0d36ff&#x22;&#x3E;#0d36ff&#x3C;/bit-tag&#x3E;
+  </code>
+</pre>
+<bit-divider bitClass="section-divider">API</bit-divider>
+<app-api-table [api]="api"></app-api-table>

@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.card{  
+    border: 1px solid $border-color;
+    background:#fff;
+    border-radius: 4px;
+}
+
+.card-box{
+    box-shadow: 0 2px 1px -1px rgba(194,194,194,.5), 0 1px 1px 0 rgba(194,194,194,.5), 1px 1px 3px rgba(194,194,194,.5);
+}
+  
+.card-header{
+    padding:15px;
+    border-bottom: 1px solid $border-color;    
+}
+
+.card-title{
+    display:block;
+    font-size: 20px;  
+    margin-bottom: 12px;  
+    color: $title-color;
+}
+
+.card-subtitle{
+    display:block;
+    font-size: 14px;
+    color: $subtitle-color;  
+    margin-top: -8px;
+}
+
+.card-content{
+    margin:0;
+    padding: 15px;
+    display: block;
+    flex-direction: row;
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.card-footer{
+    margin:0;
+    text-align: right;
+    display: block;
+    flex-direction: row;    
+    border-top: 1px solid $border-color;
+    padding: 15px;
+} 

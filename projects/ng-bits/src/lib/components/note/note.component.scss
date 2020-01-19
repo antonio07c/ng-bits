@@ -1,0 +1,68 @@
+.note-container{
+    position: relative;
+    display: block;
+    margin: 5px 0;
+    padding: 10px 10px 10px 60px;
+    color: rgba(0,0,0,.65);
+    line-height: 1.5;
+    border-radius: 4px;  
+    border: 1px solid #d2e2f9;;   
+    background-color: #e5edf9;
+  }
+
+  .noIconPadding{
+    padding:10px!important;
+  }
+
+  .note-error{
+    border-color: #ffb0b4 !important;    
+    background-color: #FFCCCC !important;
+  }
+ 
+  .note-success{
+    background-color: #ddf7cc !important;
+    border: 1px solid #c5ec83 !important;
+  }
+
+  .note-warning{
+    background-color: #fff4c8 !important;
+    border: 1px solid #ffe26f !important;
+  }
+  
+  .title{
+    font-size: 16px;
+    display:block;
+    margin-bottom: 5px;
+  }
+  
+  .text{
+    font-size: 14px;
+    display:block;
+  }
+  
+  .icon{ 
+      position: absolute;
+      top: 0;
+      float: left;
+      height: 100%;
+      left: 16px;    
+      font-size: 28px;
+      align-items: center;
+      display: inline-flex;      
+  }
+
+  .icon-blue{
+    color: #578fe4;
+  }
+
+  .icon-red{
+    color: #f56868;
+  }
+
+  .icon-yellow{
+    color: #f1c517;
+  }
+
+  .icon-green{
+    color: #83c511;
+  }

@@ -1,0 +1,150 @@
+@import "../../variables.scss";
+
+.button-normal{
+    background-color: $primary-color;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;    
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;    
+    padding: 0 14px;
+    border-radius: 4px;
+    overflow: visible;
+    height: 32px;    
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .2s cubic-bezier(.645,.045,.355,1);
+}
+
+.button-normal:hover{
+    background-color: $highlight-color;
+}
+
+.button-normal.button-disabled{
+    background-color: #e8e8e8;
+    color: #bdbdbd;    
+    cursor: default;
+}
+
+.button-raised{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.button-danger{
+    background-color: $danger-color;
+}
+
+.button-danger:hover{
+    background-color: $danger-highlight-color;
+}
+
+.button-warning{
+    background-color: $warning-color;
+}
+
+.button-warning:hover{
+    background-color: $warning-highlight-color;
+}
+
+.button-success{
+    background-color: $success-color;
+}
+
+.button-success:hover{
+    background-color: $success-highlight-color;
+}
+
+.button-link{
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;    
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;    
+    padding: 0 14px;
+    border-radius: 4px;
+    overflow: visible;
+    height: 32px;    
+    color: $primary-color;
+    background: 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .2s cubic-bezier(.645,.045,.355,1);
+}
+
+.button-link:hover{
+    color: $highlight-color;    
+}
+
+.button-link.button-disabled{    
+    color: #bdbdbd;    
+    cursor: default;
+}
+
+.button-border{
+    background-color: transparent;
+    color: $primary-color;
+    box-sizing: border-box;
+    position: relative;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid $primary-color;    
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;    
+    padding: 0 14px;
+    border-radius: 4px;
+    overflow: visible;
+    height: 32px;    
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .2s cubic-bezier(.645,.045,.355,1);
+}
+
+.button-border:hover{
+    color: $highlight-color;
+    border-color: $highlight-color;
+}
+
+.button-border.button-disabled{
+    color: #bdbdbd;    
+    border-color: #bdbdbd;
+    cursor: default;
+}
+
+.button-content::ng-deep #text:before{
+    margin: 0 5px;
+}
+
+.button-content{    
+    align-items: center;
+    display: flex;
+}

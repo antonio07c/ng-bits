@@ -1,0 +1,29 @@
+<div class="app-header">
+  <h1>Confirmation Dialog</h1>
+</div>
+<bit-divider>Confirmation Dialog Examples</bit-divider>
+<div class="wrapper">
+  <bit-button bitConfirm>Basic Dialog</bit-button>
+  <bit-button bitConfirm bitTitle="Delete?" bitText="Are you really sure?" bitConfirmText="Yes" bitCancelText="No">Custom Text</bit-button>
+  <bit-button bitConfirm bitCloseOnBackDrop="true">Close on Backdrop Click</bit-button>
+</div>
+<pre class="bit-pre">
+  <code class=" language-markup">
+    &#x3C;bit-button bitConfirm&#x3E;Basic Dialog&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitConfirm bitTitle=&#x22;Delete?&#x22; bitText=&#x22;Are you really sure?&#x22; bitConfirmText=&#x22;Yes&#x22; bitCancelText=&#x22;No&#x22;&#x3E;Open Dialog&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitConfirm bitCloseOnBackDrop=&#x22;true&#x22;&#x3E;Open Dialog&#x3C;/bit-button&#x3E;
+  </code>
+</pre>
+<bit-divider>Enable / Disable</bit-divider>
+<div class="example-wrapper">
+  <bit-button bitConfirm [bitEnable]="enabled" (bitOnConfirm)="showMsg('Confirm was clicked')" (bitOnCancel)="showMsg('Cancel was clicked')">Open Dialog</bit-button>
+  <input type="checkbox" class="checkbox" [checked] = "enabled" (change)="enabled = !enabled">enabled<br>
+</div>
+<div class="message" [ngClass]="{'message-show' : message != undefined}">{{message}}</div>
+<pre class="bit-pre">
+  <code class=" language-markup">
+    &#x3C;bit-button bitConfirm [bitEnable]=&#x22;enabled&#x22; (bitOnConfirm)=&#x22;showMsg(&#x27;Confirm was clicked&#x27;)&#x22; (bitOnCancel)=&#x22;showMsg(&#x27;Cancel was clicked&#x27;)&#x22;&#x3E;Open Dialog&#x3C;/bit-button&#x3E;
+  </code>
+</pre>
+<bit-divider bitClass="section-divider">API</bit-divider>
+<app-api-table [api]="api"></app-api-table>

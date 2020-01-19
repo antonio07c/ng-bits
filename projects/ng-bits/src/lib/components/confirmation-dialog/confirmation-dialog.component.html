@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="confirm-title">{{title}}</div>
+  <div class="confirm-text">{{text}}</div>
+  <div class="confirm-footer">
+    <div class="confirm-buttons">
+      <bit-button bitType="link" (click)="onCancelClick()">{{cancelText}}</bit-button>
+      <bit-button (click)="onOkClick()" cdkFocusInitial>{{confirmText}}</bit-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="app-header">
+  <h1>Button</h1>
+</div>
+<bit-divider>Basic Buttons</bit-divider>    
+<div class="button-container">
+  <bit-button bitType="default">Default</bit-button>
+  <bit-button bitType="link">Link</bit-button>
+  <bit-button bitType="stroked">Stroked</bit-button>
+  <bit-button bitType="danger">Danger</bit-button>
+  <bit-button bitType="warning">Warning</bit-button>
+  <bit-button bitType="success">Success</bit-button>
+</div>
+<pre class="bit-pre">
+  <code class=" language-markup">
+    &#x3C;bit-button bitType=&#x22;default&#x22;&#x3E;Default&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitType=&#x22;link&#x22;&#x3E;Link&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitType=&#x22;stroked&#x22;&#x3E;Stroked&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitType=&#x22;danger&#x22;&#x3E;Danger&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitType=&#x22;warning&#x22;&#x3E;Warning&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button bitType=&#x22;success&#x22;&#x3E;Success&#x3C;/bit-button&#x3E;
+  </code>
+</pre>
+<bit-divider>Disabled Buttons</bit-divider>
+<div class="button-container">
+  <bit-button [disabled]="true" bitType="default">Default</bit-button>
+  <bit-button [disabled]="true" bitType="link">Link</bit-button>  
+  <bit-button [disabled]="true" bitType="stroked">Stroked</bit-button>  
+</div>
+<pre class="bit-pre">
+  <code class=" language-markup">
+    &#x3C;bit-button [disabled]=&#x22;true&#x22; bitType=&#x22;default&#x22;&#x3E;Default&#x3C;/bit-button&#x3E;
+    &#x3C;bit-button [disabled]=&#x22;true&#x22; bitType=&#x22;link&#x22;&#x3E;Link&#x3C;/bit-button&#x3E;  
+    &#x3C;bit-button [disabled]=&#x22;true&#x22; bitType=&#x22;stroked&#x22;&#x3E;Stroked&#x3C;/bit-button&#x3E;
+  </code>
+</pre>
+<bit-divider bitClass="section-divider">API</bit-divider>
+<app-api-table [api]="api"></app-api-table>

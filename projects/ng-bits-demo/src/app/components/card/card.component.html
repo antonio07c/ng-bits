@@ -1,0 +1,36 @@
+<div class="app-header">
+    <h1>Card</h1>
+</div>
+<bit-divider>Basic Card Example</bit-divider>    
+<bit-card>  
+  <bit-card-title>What is Lorem Ipsum?</bit-card-title>
+  <bit-card-subtitle>Lorem ipsum dolor sit amet</bit-card-subtitle>
+  <bit-card-content>            
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </bit-card-content>  
+  <bit-card-footer class="card-footer">
+    <bit-button bitType="link">      
+      Cancel
+    </bit-button>
+    <bit-button bitType="default">
+     Update
+    </bit-button>
+  </bit-card-footer>
+</bit-card>              
+<pre class="bit-pre">
+  <code class=" language-markup">
+&lt;bit-card&gt;  
+  &lt;bit-card-title&gt;Card Title&lt;/bit-card-title&gt;
+  &lt;bit-card-subtitle&gt;Card Subtitle&lt;/bit-card-subtitle&gt;
+  &lt;bit-card-content&gt;
+    Content of the card.
+  &lt;/bit-card-content&gt;  
+  &lt;bit-card-footer class=&quot;card-footer&quot;&gt;
+    &lt;bit-button bitType=&quot;link&quot;&gt;Cancel&lt;/bit-button&gt;
+    &lt;bit-button bitType=&quot;default&quot;&gt;Update&lt;/bit-button&gt;
+  &lt;/bit-card-footer&gt;
+&lt;/bit-card&gt;
+  </code>
+</pre>
+<bit-divider bitClass="section-divider">API</bit-divider>
+<app-api-table [api]="api"></app-api-table>

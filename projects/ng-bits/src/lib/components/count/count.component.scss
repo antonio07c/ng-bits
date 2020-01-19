@@ -1,0 +1,70 @@
+.bit-count-table{  
+  margin: 0 5px 5px 0;
+  display: inline-block;
+}
+
+.bit-count-column{
+  display:block;  
+}
+
+
+.bit-count-column span ::ng-deep bit-icon-content{
+  display: inline-flex;
+} 
+
+.bit-count-left{
+  float: left;
+  align-items: center;
+  padding: 8px 10px;
+  position: relative;
+  font-size: 14px;  
+  white-space: nowrap;
+  vertical-align: middle;  
+  border-radius: 4px 0 0 4px;
+  padding-right: 4px;
+}
+
+.bit-count-left-box{
+  background-color: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.bit-count-left span{
+  margin-right: 3px;
+  float: left;
+  -webkit-box-align: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.bit-count-right{    
+  float: left;
+  padding: 8px 10px;
+  font-size: 14px;  
+  vertical-align: middle;    
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-left: 0;
+}
+
+.bit-count-right span{   
+  border-radius: 18px;
+  background: #e8e8e8;
+  padding: 1px 6px;
+} 
+
+.bit-count-right-box{
+  border: 1px solid #e8e8e8;
+  font-weight: 700;
+  padding-left: 10px;
+  background: #fff;
+  border-left: 0;
+}
+
+.bit-count-right-box span{   
+  border:none;
+  background: transparent;
+} 
+
