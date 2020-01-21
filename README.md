@@ -1,28 +1,34 @@
 # NgBits
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
+## Installation
 
-## Development server
+Install using one of the following:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+$ ng add ng-bits
+$ npm i ng-bits
+$ yarn add ng-bits
+```
 
-## Code scaffolding
+## Usage
+Import the module into your `app.module.ts` file
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```ts
+import { NgBitsModule } from 'ng-bits'
 
-## Build
+@NgModule({
+  imports: [ NgBitsModule ]
+})
+export class AppModule {
+}
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Website
 
-## Running unit tests
+https://antonio07c.github.io/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
+MIT
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # ng-bits
