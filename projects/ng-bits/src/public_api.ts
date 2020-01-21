@@ -12,3 +12,4 @@ export * from './lib/components/note/note.component';
 export * from './lib/components/divider/divider.component';
 export * from './lib/components/count/count.component';
 export * from './lib/components/icon-content/icon-content.component';
+export * from './lib/components/confirmation-dialog/confirm.directive';

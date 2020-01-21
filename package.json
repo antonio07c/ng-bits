@@ -1,6 +1,28 @@
 {
   "name": "ng-bits",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Angular UI Components, Simple Library",
+  "author": "Antonio Castro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonio07c/ng-bits.git"
+  },
+  "homepage": "https://github.com/antonio07c/ng-bits",
+  "keywords": [
+    "angular",
+    "ui",
+    "components",
+    "library",
+    "card",
+    "confirmation",
+    "dialog",
+    "divider",
+    "note",
+    "tag",
+    "material",
+    "design"
+  ],
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
