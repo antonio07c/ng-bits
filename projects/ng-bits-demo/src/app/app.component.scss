@@ -87,6 +87,8 @@
 
   .nav-menu{
     display: inline-flex;
+    position: absolute;
+    right: 20px;
   }
 
   .nav-menu ul{
@@ -122,7 +124,15 @@
     margin: 5px;
   }
 
- 
+  .nav-icons{
+    position: absolute;
+    right: 20px;
+  }
+
+  .github-logo{
+    height: 28px;
+    width: 28px;
+  }
 
   @media (max-width: 868px) {
     .menu{

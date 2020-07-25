@@ -13,16 +13,18 @@ import { TagComponent } from './components/tag/tag.component';
 import { DividerComponent } from './components/divider/divider.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
+import { GettingStartedComponent } from './components/getting-started/getting-started.component';
 
 const appRoutes: Routes = [
+  { path: 'getting-started', component: GettingStartedComponent},
   { path: 'button', component: ButtonComponent},
   { path: 'card', component: CardComponent},
   { path: 'confirmation-dialog', component: ConfirmationDialogComponent},
   { path: 'note', component: NoteComponent},
   { path: 'tag', component: TagComponent},
-  { path: 'divider', component: DividerComponent},
+  { path: 'divider', component: DividerComponent},  
   { path: '',
-    redirectTo: '/button',
+    redirectTo: '/getting-started',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }
@@ -39,7 +41,8 @@ const appRoutes: Routes = [
     TagComponent,
     DividerComponent,
     ButtonComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
+    GettingStartedComponent
   ],
   imports: [
     RouterModule.forRoot(
